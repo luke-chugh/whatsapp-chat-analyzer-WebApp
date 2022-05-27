@@ -1,0 +1,13 @@
+regex
+streamlit
+pandas
+wordcloud
+emoji
+matplotlib
+seaborn
+plotly
+Pillow
+numpy
+emot
+nltk
+streamlit-aggrid
