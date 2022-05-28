@@ -20,5 +20,5 @@
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/j.png)
 ____________
-### Author
+# Author
 [Luke Chugh](https://www.linkedin.com/in/luke-chugh-2b2043181/)
