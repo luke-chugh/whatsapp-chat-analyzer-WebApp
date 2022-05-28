@@ -18,7 +18,7 @@
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/7.png)
 
-![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/8.png)
+![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/12.png)
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/9.png)
 
