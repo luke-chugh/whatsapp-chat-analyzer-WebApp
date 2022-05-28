@@ -1,4 +1,4 @@
-## WhatsApp Chat Analyzer WebApp:
+# WhatsApp Chat Analyzer WebApp:
 
 [Application Link](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
 
