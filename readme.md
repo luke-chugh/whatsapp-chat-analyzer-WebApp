@@ -1,7 +1,5 @@
 # WhatsApp Chat Analyzer WebApp: [Application Link](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
 
-## Below are the features of my web app:
-
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/a.png)
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/b.png)
