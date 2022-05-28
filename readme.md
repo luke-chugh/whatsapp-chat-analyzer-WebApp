@@ -1,6 +1,4 @@
-# WhatsApp Chat Analyzer WebApp:
-
-[Application Link](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
+# WhatsApp Chat Analyzer WebApp: [Application Link](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
 
 ## Below are the features of my web app:
 
