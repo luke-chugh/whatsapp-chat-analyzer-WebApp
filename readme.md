@@ -4,7 +4,7 @@
 
 ## Below are the features of my web app:
 
-![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/1.png)
+![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/11.png)
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/2.png)
 
