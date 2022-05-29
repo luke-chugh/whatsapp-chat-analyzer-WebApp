@@ -26,9 +26,12 @@ This WebApp can analyze the WhatsApp messages and their **sentiments** not only 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/j.png)
 
 # Installation
-To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+To install the required packages and libraries, run the following commands in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
 ```bash
 pip install -r requirements.txt
+```
+```bash
+streamlit run app.py
 ```
 # Author
 [Luke Chugh](https://www.linkedin.com/in/luke-chugh-2b2043181/)
