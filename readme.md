@@ -2,6 +2,8 @@
 
 This WebApp can analyze the whatsapp messages not only with respect to the the whatsapp group as a whole but also with respect to each person in that group using the dropdown menu. It supports both **12 hour** and **24 hour** clock format and also **dd/mm/yyyy**, **mm/dd/yyyy** and **yyyy/mm/dd** date formats.
 
+![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/dropdown.png)
+
 # Below are the features of this WebApp:
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/images/a.png)
 
