@@ -30,7 +30,7 @@ To install the required packages and libraries, run this command in the project 
 ```bash
 pip install -r requirements.txt
 ```
-To run this app in your local machine open a command prompt/terminal in the cloned directory and run:
+To run this app in your local machine open a command prompt or terminal in the cloned directory and run:
 ```bash
 streamlit run app.py
 ```
