@@ -1,5 +1,10 @@
 # WhatsApp Chat Analyzer: [[WebApp Link]](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
 
+![](https://img.shields.io/badge/python-3.10.4-blueviolet)
+![](https://img.shields.io/badge/plotly-5.8.0-greenyellow)
+![](https://img.shields.io/badge/nltk-3.5-aquamarine)
+![](https://img.shields.io/badge/streamlit-1.9.1-brightgreen)
+
 This WebApp can analyze the WhatsApp messages and their **sentiments** not only with respect to the the WhatsApp group as a whole but also with respect to each person in that group using the dropdown menu. It supports both **12 hour** and **24 hour** clock format and also **dd/mm/yyyy**, **mm/dd/yyyy** and **yyyy/mm/dd** date formats.
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/screenshots/dropdown.png)
