@@ -1,6 +1,6 @@
 # WhatsApp Chat Analyzer: [[WebApp Link]](https://whatsapp-chat-analyzer-by-luke.herokuapp.com/)
 
-![](https://img.shields.io/badge/python-3.10.4-blueviolet)
+![](https://img.shields.io/badge/python-3.7-blueviolet)
 ![](https://img.shields.io/badge/plotly-5.8.0-greenyellow)
 ![](https://img.shields.io/badge/nltk-3.5-aquamarine)
 ![](https://img.shields.io/badge/streamlit-1.9.1-brightgreen)
