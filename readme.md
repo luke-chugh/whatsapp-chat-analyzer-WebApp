@@ -1,5 +1,4 @@
 # WhatsApp Chat Analyzer: 
-copy and paste in a new tab: https://luke-chugh-whatsapp-chat-analyzer-webapp-app-rnr1fa.streamlit.app/
 
 ![](https://img.shields.io/badge/python-3.7-blueviolet)
 ![](https://img.shields.io/badge/plotly-5.8.0-greenyellow)
