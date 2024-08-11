@@ -1,13 +1,14 @@
-import streamlit as st
-import helper
-import matplotlib.pyplot as plt
-import seaborn as sns
 import re
+import io
 import string
+import helper
 import pandas as pd
-import plotly.graph_objects as go
+import seaborn as sns
+import streamlit as st
 import plotly.express as px
 from st_aggrid import AgGrid
+import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 
 hide_streamlit_style = """
             <style>
@@ -22,7 +23,15 @@ st.sidebar.markdown('**Creator:** Luke Chugh')
 #Clock Format
 clock_format = st.sidebar.selectbox('Select clock format of your device:', ['12 hour (AM/PM)', '24 hour'])
 date_format = st.sidebar.selectbox('Select date format of your device:', ['dd/mm/yyyy', 'mm/dd/yyyy', 'yyyy/mm/dd'])
-uploaded_file = st.sidebar.file_uploader("Upload WhatsApp exported chat in .txt format:", type=["txt"])
+
+sample_file_path = "./sample_chat.txt"
+use_sample_file = st.sidebar.checkbox("Use Sample WhatsApp Chat File", value=False)
+if use_sample_file:
+    with open(sample_file_path, 'rb') as file:
+        uploaded_file = io.BytesIO(file.read())
+        st.sidebar.markdown('<p style="font-size: 16px;">Reload to upload exported chat</p>', unsafe_allow_html=True)
+else:
+    uploaded_file = st.sidebar.file_uploader("Upload WhatsApp exported chat in .txt format:", type=["txt"])
 
 def preprocess(data):
     if clock_format == '12 hour (AM/PM)':
@@ -126,10 +135,10 @@ if uploaded_file is not None:
             fig.update_layout(showlegend=True, width=800, height=600)
             st.plotly_chart(fig)
 
-            st.header("User acitvity per month")
+            st.header("User activity per month")
             busy_month = helper.month_strat_user(selected_user, df)
             fig = px.line_polar(busy_month, r="message", theta="month", color='user', line_close=True,color_discrete_sequence=px.colors.qualitative.Light24)
-            fig.update_layout(showlegend=True, width=600, height=600)
+            fig.update_layout(showlegend=True, width=600, height=600, font=dict(color='black'))
             st.plotly_chart(fig)
 
         else:
@@ -149,7 +158,7 @@ if uploaded_file is not None:
             st.plotly_chart(fig)
 
         st.title("Weekly Activity Map")
-        layout = go.Layout(title = 'x = Time in 24 hour format, y = Day of the week and z = Number of messages', title_x=0.5,
+        layout = go.Layout(title = 'z = Number of messages', title_x=0.5,
                   yaxis={"title": '<b>Days of the week</b>'},
                   width=800,
                   height=600,
@@ -212,11 +221,3 @@ if uploaded_file is not None:
             fig.update_traces(textposition='inside', textinfo='percent+label')
             fig.update_layout(showlegend=False, width=600, height=600,annotations=[dict(text='Sentiment Analysis', x=0.5, y=0.5, font_size=20, showarrow=False)]) 
             st.plotly_chart(fig)
-
-            
-
-
-            
-        
-
-

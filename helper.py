@@ -1,4 +1,5 @@
 from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 import pandas as pd
 from collections import Counter
 import emoji
@@ -6,6 +7,7 @@ import re
 from PIL import Image
 import numpy as np
 import nltk
+import streamlit as st
 from emot.emo_unicode import UNICODE_EMOJI, EMOTICONS_EMO
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import string
@@ -48,7 +50,6 @@ def most_busy_users(df):
     return author_df
 
 def create_wordcloud(selected_user,df):
-
     f = open('stopwords.txt', 'r', encoding='utf-8')
     stop_words = f.read()
 
@@ -153,6 +154,7 @@ def sentiment_preprocess(text):
   text = text.translate(str.maketrans('','',string.punctuation))
   return text
 
+@st.cache_data()
 def sentiment_analysis(selected_user,df):
     if selected_user != 'All Users':
         bleh = df[df['user'] == selected_user]
@@ -170,6 +172,7 @@ def sentiment_analysis(selected_user,df):
     data["Neutral"] = [sentiments.polarity_scores(i)["neu"] for i in data["processed_message"]]
     sentiment = []
     for i in range(data.shape[0]):
+        largest = 'Neutral'  # Default value
         if data.iloc[i]['Positive'] > data.iloc[i]['Negative'] and data.iloc[i]['Positive'] > data.iloc[i]['Neutral']:
             largest = 'Positive'
         elif data.iloc[i]['Negative'] > data.iloc[i]['Positive'] and data.iloc[i]['Negative'] > data.iloc[i]['Neutral']:
