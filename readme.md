@@ -1,6 +1,8 @@
 # WhatsApp Chat Analyzer
 
-Do not click on this link. Copy and paste it in a new tab: https://luke-chugh-whatsapp-chat-analyzer-webapp-app-rnr1fa.streamlit.app/
+Do not click on this link. 
+
+Copy and paste it in a new tab: https://luke-chugh-whatsapp-chat-analyzer-webapp-app-rnr1fa.streamlit.app/
 
 ![](https://img.shields.io/badge/python-3.7-blueviolet)
 ![](https://img.shields.io/badge/plotly-5.8.0-greenyellow)
