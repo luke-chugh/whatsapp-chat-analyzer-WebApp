@@ -163,7 +163,7 @@ if uploaded_file is not None:
             st.header("User activity per month")
             busy_month = helper.month_strat_user(selected_user, df)
             fig = px.line_polar(busy_month, r="message", theta="month", color='user', line_close=True,color_discrete_sequence=px.colors.qualitative.Light24)
-            fig.update_layout(showlegend=True, width=650, height=650, font=dict(color='black'), margin=dict(l=100, r=20, t=20, b=20))
+            fig.update_layout(showlegend=True, width=650, height=650, margin=dict(l=100, r=20, t=20, b=20))
             st.plotly_chart(fig)
 
         else:
