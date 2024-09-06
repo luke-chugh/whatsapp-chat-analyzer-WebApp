@@ -9,7 +9,7 @@ Copy and paste it in a new tab: https://luke-chugh-whatsapp-chat-analyzer-webapp
 ![](https://img.shields.io/badge/nltk-3.5-aquamarine)
 ![](https://img.shields.io/badge/streamlit-1.9.1-brightgreen)
 
-This WebApp utilizes a series of data cleaning and data pre-processing pipelines to analyze the WhatsApp messages and deliver insights about the trends in user activity and user behaviour using interactive plotly charts and perform sentiment analysis not only with respect to the WhatsApp group as a whole but also with respect to each person in that group. This WebApp supports both 12 hour and 24 hour clock formats and also dd/mm/yyyy, mm/dd/yyyy and yyyy/mm/dd date formats. This WebApp was deployed on Heroku cloud platform.
+This WebApp utilizes a series of data cleaning and data pre-processing pipelines to analyze the WhatsApp messages and deliver insights about the trends in user activity and user behaviour using interactive plotly charts and perform sentiment analysis not only with respect to the WhatsApp group as a whole but also with respect to each person in that group. This WebApp supports both 12 hour and 24 hour clock formats and also dd/mm/yyyy, mm/dd/yyyy and yyyy/mm/dd date formats. This WebApp was deployed on Streamlit cloud platform.
 
 ![Capture](https://github.com/luke-chugh/whatsapp-chat-analyzer-WebApp/blob/main/screenshots/dropdown.png)
 
